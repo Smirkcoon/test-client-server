@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2041427-9594-4c4e-8c3f-e9ec83a600c7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.test-client-server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.test-client-server/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ListItenPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ListItenPrefab.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/mainscene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/mainscene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ButtonsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ButtonsController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HttpManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HttpManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ResponceRequest/SimpleHttpClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ResponceRequest/SimpleHttpClient.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScrollView/ListViewItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScrollView/ListViewItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScrollView/ListViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScrollView/ListViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScrollView/ScroollViewController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScrollView/ScrollViewController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScrollView/ScroollViewController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScrollView/ScrollViewController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScrollView/ScrollViewController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScrollView/ScrollViewController.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,11 +45,11 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/PopupInputId.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ScrollView/ScroollViewController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ResponceRequest/SimpleHttpClient.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ScrollView/ScrollViewController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ButtonsController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ScrollView/ListViewItem.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ScrollView/ListViewModel.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/HttpManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ScrollView/ListViewModel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ScrollView/ScrollViewController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2ciIiTRNzsknK4iAFXAfN416R5N" />
@@ -103,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1708588102745</updated>
       <workItem from="1708588816814" duration="23381000" />
-      <workItem from="1708613327912" duration="4378000" />
+      <workItem from="1708613327912" duration="4917000" />
     </task>
     <servers />
   </component>

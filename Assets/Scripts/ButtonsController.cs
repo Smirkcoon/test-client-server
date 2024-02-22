@@ -1,16 +1,10 @@
 using System;
 using UnityEngine;
-using UnityEngine.UI;
-using HttpRequest;
-using ClientServer;
 using ClientServer.WWWResponse;
-using TMPro;
-using UnityEngine.Serialization;
 
 public class ButtonsController : MonoBehaviour
 {
     public HttpManager httpManager;
-    public TMP_Text responseText;
     public PopupInputId popupInputId;
     private Action resultButtons;
     public ScrollViewController scrollViewController;
@@ -56,11 +50,6 @@ public class ButtonsController : MonoBehaviour
                 }, popupInputId.GetTextInputField());
         }
         popupInputId.OpenPopup();
-    }
-
-    private void SetTextStatus(ListViewItem[] buttons)
-    {
-        responseText.text = buttons.Length.ToString();
     }
 
     private int GetIntInputField()

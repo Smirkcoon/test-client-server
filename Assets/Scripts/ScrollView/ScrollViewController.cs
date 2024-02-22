@@ -30,6 +30,8 @@ public class ScrollViewController : MonoBehaviour
             s.AppendInterval(i* 1.0f/10);
             s.OnComplete(() =>
             {
+                if (Items.Keys.Contains(itemsModels[x].id))
+                    return;
                 var newItem = Instantiate(prefab, content);
                 Items.Add(itemsModels[x].id, newItem);
                 newItem.Setup(itemsModels[x]);
