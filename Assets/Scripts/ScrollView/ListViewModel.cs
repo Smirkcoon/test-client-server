@@ -14,7 +14,7 @@ namespace ClientServer
 
         public bool animationType;
 
-        public string name;
+        public string text;
 
         public override string ToString()
         {

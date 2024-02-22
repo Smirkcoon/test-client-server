@@ -3,9 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using ClientServer;
+using DG.Tweening;
 using UnityEngine;
 
-public class ScroollViewController : MonoBehaviour
+public class ScrollViewController : MonoBehaviour
 {
     public Dictionary<int,ListViewItem> Items = new Dictionary<int, ListViewItem>();
 
@@ -16,38 +17,24 @@ public class ScroollViewController : MonoBehaviour
     {
         return Items.Values.ToArray();
     }
-    
-    public void AddNewItem()
-    {
-        var newItem = Instantiate(prefab, content);
 
-        for (int i = 0; i < Items.Keys.Count; i++)
-        {
-            if (!Items.Keys.Contains(i))
-            {
-                Items.Add(i, newItem);
-                newItem.SetupNewItem(i);
-                return;
-            }
-        }
-
-        int id = -1;
-        if (Items.Count > 0)
-            id = Items.Keys.Max() + 1;
-        else
-            id = 0;
-        
-        Items.Add(id, newItem);
-        newItem.SetupNewItem(id);
-    }
-    
     public void AddItemWithData(ListViewModel[] itemsModels)
     {
         for (int i = 0; i < itemsModels.Length; i++)
         {
-            var newItem = Instantiate(prefab, content);
-            Items.Add(itemsModels[i].id, newItem);
-            newItem.Setup(itemsModels[i],i/10);
+            int x = i;
+            if (Items.Keys.Contains(itemsModels[i].id))
+                continue;
+
+            Sequence s = DOTween.Sequence();
+            s.AppendInterval(i* 1.0f/10);
+            s.OnComplete(() =>
+            {
+                var newItem = Instantiate(prefab, content);
+                Items.Add(itemsModels[x].id, newItem);
+                newItem.Setup(itemsModels[x]);
+                newItem.transform.DOScale(1, 0.2f);
+            });
         }
     }
 

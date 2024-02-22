@@ -5,6 +5,7 @@ using HttpRequest;
 using ClientServer;
 using ClientServer.WWWResponse;
 using TMPro;
+using UnityEngine.Serialization;
 
 public class ButtonsController : MonoBehaviour
 {
@@ -12,13 +13,14 @@ public class ButtonsController : MonoBehaviour
     public TMP_Text responseText;
     public PopupInputId popupInputId;
     private Action resultButtons;
-    public ScroollViewController ScroollViewController;
+    public ScrollViewController scrollViewController;
     public void OnClickCreate()
     {
-        ScroollViewController.AddNewItem();
-        /*httpManager.SendPacket<GetListViewItems>(ePacketType.POST, res =>
+        popupInputId.ClosePopup();
+        httpManager.SendPacket<GetListViewItems>(ePacketType.POST, res =>
         {
-        }, inputFieldId.text);*/
+            scrollViewController.AddItemWithData(res.Items);
+        });
     }
 
     public void OnClickDelete()
@@ -26,13 +28,20 @@ public class ButtonsController : MonoBehaviour
         popupInputId.OpenPopup();
         httpManager.SendPacket<GetListViewItems>(ePacketType.DELETE, res => {  });
         if(!string.IsNullOrEmpty(popupInputId.GetTextInputField()))
-            ScroollViewController.RemoveButtonById(GetIntInputField());
+            scrollViewController.RemoveButtonById(GetIntInputField());
     }
 
     public void OnClickUpdate()
     {
+        if (popupInputId.Opened)
+        {
+            httpManager.SendPacket<GetListViewItems>(ePacketType.PUT, res =>
+                {
+                    Debug.Log("PUT " + JsonUtility.ToJson(res, true));
+                },
+                popupInputId.GetTextInputField());
+        }
         popupInputId.OpenPopup();
-        //httpManager.SendPacket<GetListViewItems>(ePacketType.PUT, res => {  });
     }
 
     public void OnClickRefresh()
@@ -40,7 +49,11 @@ public class ButtonsController : MonoBehaviour
         if (popupInputId.Opened)
         {
             httpManager.SendPacket<GetListViewItems>(ePacketType.GET,
-                res => { ScroollViewController.AddItemWithData(res.Items); }, popupInputId.GetTextInputField());
+                res =>
+                {
+                    scrollViewController.AddItemWithData(res.Items);
+                    Debug.Log("Refresh " + JsonUtility.ToJson(res, true));
+                }, popupInputId.GetTextInputField());
         }
         popupInputId.OpenPopup();
     }

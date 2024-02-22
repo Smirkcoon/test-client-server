@@ -10,7 +10,7 @@ namespace HttpRequest
     {
         public static IHttpRequest Get(string uri)
         {
-            Debug.LogError("uri " + uri);
+            //Debug.Log("uri " + uri);
             return new HttpRequestImpl(UnityWebRequest.Get(uri));
         }
 
@@ -23,7 +23,8 @@ namespace HttpRequest
 
         public static IHttpRequest Put(string uri, string bodyData)
         {
-            return new HttpRequestImpl(UnityWebRequest.PostWwwForm(uri, bodyData));
+            Debug.Log("Put uri " + uri + " bodyData " + bodyData);
+            return new HttpRequestImpl(UnityWebRequest.Put(uri, bodyData));
         }
 
         public static IHttpRequest Delete(string uri)

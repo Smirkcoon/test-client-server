@@ -4,6 +4,13 @@
     <list default="true" id="e2041427-9594-4c4e-8c3f-e9ec83a600c7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.test-client-server/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.test-client-server/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/mainscene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/mainscene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ButtonsController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ButtonsController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HttpManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HttpManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ResponceRequest/SimpleHttpClient.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ResponceRequest/SimpleHttpClient.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScrollView/ListViewItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScrollView/ListViewItem.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScrollView/ListViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScrollView/ListViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScrollView/ScroollViewController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScrollView/ScrollViewController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ScrollView/ScroollViewController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ScrollView/ScrollViewController.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,7 +34,8 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/PopupInputId.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScrollView/ListViewItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0E8168ED-C7C7-4C6C-8898-F77F2BE4D6B4/01/fdd1ea1e/Color.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScrollView/ScroollViewController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScrollView/ScrollViewController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/776E2FE0-1FA7-4D5F-B538-B9593CFBE91F/0f/aac4d442/UnityWebRequest.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/0C2E0812-6435-4D56-89A3-1EB5FF26B1D1/4f/ac96f732/JsonUtility.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ButtonsController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScrollView/ListViewModel.cs" root0="FORCE_HIGHLIGHTING" />
@@ -40,13 +48,14 @@
       <option value="$PROJECT_DIR$/Assets/Scripts/ScrollView/GameManager/GameManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ScrollView/UI/ListView/ListViewItem.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/Model/WWWResponse.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ResponceRequest/SimpleHttpClient.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/HttpManager.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ScrollView/ListViewModel.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ScrollView/ScroollViewController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PopupInputId.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ScrollView/ScroollViewController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ResponceRequest/SimpleHttpClient.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ScrollView/ScrollViewController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ButtonsController.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ScrollView/ListViewItem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ScrollView/ListViewModel.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/HttpManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="2ciIiTRNzsknK4iAFXAfN416R5N" />
@@ -60,7 +69,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -93,7 +102,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708588102745</updated>
-      <workItem from="1708588816814" duration="19768000" />
+      <workItem from="1708588816814" duration="23381000" />
+      <workItem from="1708613327912" duration="4378000" />
     </task>
     <servers />
   </component>
@@ -112,6 +122,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
